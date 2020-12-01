@@ -8,12 +8,16 @@ public class a1
 	 
 		 Scanner console = new Scanner(System.in);
 		 System.out.println("Введите число");
-	      double x = console.nextInt(); //число
-	      double sum = x / 10; //число : 10
-	      System.out.println("x mod 10 = " + x % 10);
-	      int sum ; //
-	      int sum = x + y + z;
-	      if (sum == 3)System.out.println(x);  // if (sum = 3, 6, 9)
+	      int x = console.nextInt(); //число
+	      int sum = 0;
+	    		  
+	      while (x != 0) //пока х не = 0
+	      {
+	      sum = sum + (x % 10); //число : 1  
+	      x = x / 10;
+	      }
+	      System.out.println( sum ); 
+	      if (sum == 3 || sum == 6 || sum == 9 )System.out.println("Yes");  // if (sum = 3, 6, 9)
 	      else  System.out.println("no");  //иначе вывести текст     
 
 	   }
